@@ -1,28 +1,142 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배너연습</title>
-   
+
     <style>
-        .main {width: 428px; height: 512px; background-color: #888;}  
-        .main-up {width: 428px; height: 112px; background-color: #0d3bf1;}  
-        .main-down {width: 428px; height: 400px; background-color: #f2e59d;}  
+        @font-face {
+        font-family: 'YeogiOttaeJalnanGothic';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+        font-weight: normal;
+        font-display: swap;
+        }
+
+        h1, h4 {
+            font-family:'YeogiOttaeJalnanGothic'; 
+            font-weight: 200;
+        }
+
+        .main {
+            width: 428px;
+            height: 512px;
+            background-color: #888;
+            margin: 0 auto;
+        }
+
+        .main-up {
+            padding-top: 1px;
+            width: 428px;
+            height: 142px;
+            background-color: #005aa8;
+        }
+        
+        h1 {
+            margin-top: -10px;
+            text-align: center;
+            color: #fdcf11;
+             /* margin: 0 auto; */
+             /* h의 특징
+             가로 한칸을 전부 차지한다.
+             글정렬로 중간에 위치시킨다. */
+        }
+        h4 {
+            font-size: 15px;
+            text-align: center;
+            color: #fdfdfd;
+             /* margin: 0 auto; */
+             /* 가로 사이즈를 만들어주지 않았기 때문에 margin: 0 auto;가 먹히지 않는다. */
+        }
+
+        .main-down {
+            padding-top: 15px;
+             /* 패딩 padding 특징
+            선택한 영역 안쪽에서 멀어지는 작업
+            수치만큼 길어지면서 전체 길이에도 더해진다.
+            ==전체길이 - 패딩길이 */
+            width: 428px;
+            height: 354px;
+            background-color: #fef7c8;
+        }
+
+        /* 아래 부분 박스들 */
+        .wh-box {
+            margin: 0 auto;
+            background-color: #fafafa;
+            width: 398px;
+            height: 216px;
+            border-radius: 6px 6px 32px 6px;
+        }
+        .blue-box {
+            margin: 0 auto;
+            margin-top: 15px;
+            background-color: #0067a9;
+            width: 398px;
+            height: 56px;
+            border-radius: 6px;
+            text-align: center;
+            color: #fdfdfd;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 0;
+            line-height: 56px;
+        }
+        span {
+            color: #fcca0c;
+        }
+        .shortcut-button {
+            margin: 0 auto;
+            margin-top: 15px;
+            background-color: #0067a9;
+            width: 108px;
+            height: 34px;
+            border-radius: 17px;
+            text-align: center;
+            color: #fdfdfd;
+        }
     </style>
 
 </head>
+
 <body>
     <div class="main">
         <div class="main-up">
-        
-            
+            <h4><img src="./이미지/alert.png" width="16px">
+                경기도 통합데이터센터 정보자원 이전에 따른
+            </h4>
+            <h1>
+                부천시 대민서비스<br />
+                홈페이지 일시 중단 안내
+            </h1>
+
         </div>
         <div class="main-down">
-    
-            
+            <div class="wh-box">
+
+
+            </div>
+            <div class="blue-box">
+                <p>
+                    <img src="">
+                    문의
+                    <img src="">
+                    <span>
+                        032)320-3000
+                    </span>
+                    부천시 콜센터
+                </p>
+
+            </div>
+            <div class="shortcut-button">
+                바로가기>
+            </div>
+
+
         </div>
-        
     </div>
 </body>
+
 </html>
