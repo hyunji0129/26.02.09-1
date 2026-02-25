@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행 통합 예제</title>
+    <style>
+         h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+     <h2>행(row) 통합 예제</h2>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>과목</th>
+            <th>점수</th>
+        </tr>
+        <tr>
+            <td rowspan="2">홍길동</td>
+            <td>수학</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td rowspan="2">김영희</td>
+            <td>수학</td> 
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td>92</td>
+        </tr>
+    </table>
+</body>
+</html>
