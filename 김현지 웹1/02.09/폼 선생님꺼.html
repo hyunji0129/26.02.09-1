@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .form-st{ border: 1px solid #ab2266;padding: 14px;}
+        fieldset{width: 50%;}
+        li{list-style-type: none;}
+        ul{ float: left; margin: 0;}
+        /* label{text-align: right; width: 45%;} */
+        /* input{width: 55%;} */
+        .label-l{text-align: right;}
+    </style>
+</head>
+<body>
+    <form action="register.php" method="post">
+
+
+    <fieldset>
+        <legend>로그인 정보</legend>
+        <ul>
+            <li>
+                <label for="user-id">아이디</label>
+                <input type="text" id="user-id" title="아이디">
+            </li>
+            <li>
+                <label for="user-pw">비밀번호</label>
+                <input type="text" id="user-pw" title="비밀번호">
+            </li>
+            <li>
+                <label for="user-pw-con">비밀번호확인</label>
+                <input type="text" id="user-pw-con" title="비밀번호확인">
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+            <li class="label-l"> <label for="name">이름</label></li>
+            <li class="label-l"> <label for="user-email">메일주소</label></li>
+            <li class="label-l"> <label for="user-tel">연락처</label></li>
+            <li class="label-l"> <label for="user-web">블로그/홈페이지</label> </li>
+        </ul>
+        <ul>
+            <li> <input type="text" id="name" title="이름"></li>
+            <li> <input type="email" id="user-email" title="메일주소"></li>
+            <li> <input type="tel" id="user-tel" title="연락처"></li>
+            <li> <input type="url" id="user-web" title="블로그/홈페이지"> </li>
+           
+        </ul>
+    </fieldset>
+
+    <button>가입하기</button>
+
+</form>
+
+</body>
+</html>

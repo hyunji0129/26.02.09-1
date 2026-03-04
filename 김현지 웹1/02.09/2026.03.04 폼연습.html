@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 연습</title>
+    <style>
+        .form-st {
+            border: 1px solid #ab2266;
+            padding: 14px;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <form action="search.php" method="post">
+        <input type="text" title="검색">
+        <input type="submit" value="검색">
+    </form>
+
+    <form action="register.php" method="post">
+        <label for="user-id">아이디(6자이상)</label>
+        <input type="text" id="user-id" title="아이디">
+    </form>
+    <br>
+
+    <form class="form-st" action="register.php" method="post">
+        <p style="background-color: #fff; margin-top: -24px; width: 60px; text-align: center;" >신청자</p>
+        <label for="name">이름</label>
+        <input type="text" id="user-name" title="이름">
+    <br>
+    <br>
+        <label for="num">학번</label>
+        <input type="text" id="num" title="학번">
+    <br>
+    <br>
+        <label for="major">학과</label>
+        <input type="text" id="major" title="학과">
+    </form>
+    <br>
+    <br>
+
+    <form>
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>필수 정보</legend>
+            <ul type="none">
+                <li>
+                    <label for="name">이름 :</label>
+                    <input type="text" id="name">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <ul type="none">
+                <li>
+                    <label for="bir">생일 :</label>
+                    <input type="date" id="bir">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+
+    <form>
+        <h1>회원가입</h1>
+        <div class="user">
+            <fieldset>
+                <legend>로그인 정보</legend>
+                <label for="id">아이디</label>
+                <input type="text" id="id">
+            <br>
+                <label for="pass">비밀번호</label>
+                <input type="text" id="pass">
+            <br>
+                <label for="pass-ok">비밀번호 확인</label>
+                <input type="text" id="pass-ok">
+            </fieldset>
+
+            <fieldset>
+                <legend>개인 정보</legend>
+                <label for="name">이름</label>
+                <input type="text" id="id">
+            <br>
+                <label for="email">메일 주소</label>
+                <input type="text" id="mail">
+            <br>
+                <label for="tel">연락처</label>
+                <input type="text" id="tel">
+            <br>
+                <label for="home">블로그/홈페이</label>
+                <input type="text" id="home">
+            </fieldset>
+            <input type="submit" value="가입하기">
+        </div>
+    </form>
+    
+</body>
+</html>
