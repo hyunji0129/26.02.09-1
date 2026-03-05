@@ -26,7 +26,18 @@
         font: inherit; */
         vertical-align: baseline;
         }
-
+        .main-container {
+            width: 1250px;
+            margin: 0;
+            background-color: aqua;
+        }
+        header {
+            width: 100%; 
+            height: 80px;
+        }
+        .clear {
+            clear: both;
+        }
         table {
         border-collapse: collapse;
         border-spacing: 0;
@@ -45,7 +56,7 @@
         .sub-container {
             width: 920px;
             margin: 0 auto;
-            background-color: antiquewhite;
+            clear: both;
         }
         /* .history-y {
             line-height: 1;
@@ -91,12 +102,48 @@
         .info-vac li{ 
             list-style-type: square;
         }
+        body {
+            padding: 0; margin: 0;
+        }
+        .logo,
+        .menu {
+            float: left;
+        }
+        .sns {
+            float: right;
+            padding: 10px;
+        }
+        .menu>ul>li {
+            float: left;
+            list-style-type: none;
+            padding: 30px;
+        }
     </style>
 </head>
 
 <body>
     <div class="main-container">
         <!-- 메뉴 넣기 -->
+         <header>
+            <div class="logo">
+                <img src="./강남도서관-로고.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>자료검색</li>
+                    <li>프로그램</li>
+                    <li>열린공간</li>
+                    <li>도서관안내</li>
+                    <li>마이라이브러리</li>
+                </ul>
+            </div>
+            <div class="sns">
+                <a href="https:instargram.com" target="_blank"><img src="./인스타.png" alt=""></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="./페이스북.png" alt=""></a>
+                <a href="https://www.youtube" target="_blank"><img src="./유투브.png" alt=""></a>
+            </div>
+        </header>
+        <div class="clear"></div>
         <div class="sub-container">
             <!-- 연혁 시작 -->
             <div class="history">
