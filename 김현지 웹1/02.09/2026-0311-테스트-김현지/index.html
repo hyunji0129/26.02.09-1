@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
             width: 100%;
             height: 72px;
             background-color: #419095;
-            
+
         }
 
         .logo1 {
@@ -29,7 +30,7 @@
             font-size: 24px;
         }
 
-        ul>a {
+        .menu>ul>a {
             padding-right: 110px;
             color: #DCFDFF;
             text-decoration: none;
@@ -40,48 +41,39 @@
         ul>a {
             float: left;
         }
-        
+
+        ul {
+            margin: 0;
+        }
+
         li {
             list-style-type: none;
-           
+            margin: 0;
+
         }
-        
+
         .icon {
             float: right;
             padding-top: 20px;
             padding-right: 126px;
         }
+
         /* 헤더 끝 */
-        
+
         /* 메인 시작 */
         .main-container {
             width: 1920px;
             margin: 0 auto;
         }
-        .sub-container,
-        .baby-container {
-            width: 1440px;
-            margin: 0 auto;
-        }
-
-        .baby-container {}
-
-        .notice {
-            background-color: #28A4D6;
-            color: #fff;
-            width: 200px;
-            font-size: 24px;
-            text-align: center;
-            float: left;
-            
-        }
 
         .center {
             width: 1440px;
-            height: 554px;
+            /* -554사이즈 여쭤보기- */
+            height: 500px;
             margin: 0 auto;
             background-image: url(./main-banner.png);
             background-repeat: no-repeat;
+            /* 박스쉐도우 */
         }
 
         h2 {
@@ -100,105 +92,174 @@
             padding-left: 110px;
         }
 
+        /* 3등분 */
+        .baby-container {
+            width: 1440px;
+            height: 368px;
+            margin: 0 auto;
+        }
+
+        .notice>h4 {
+            background-color: #28A4D6;
+            color: #fff;
+            width: 180px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 32px;
+            font-weight: 500;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
         .place,
-        .date,
         .picture-01,
-        .info {
+        .picture-02 {
+            float: left;
+            margin: 0;
+        }
+
+        hr {
+            clear: both;
+            border: 1px solid #28A4D6;
+        }
+
+        .banner-left {
             float: left;
         }
 
-      
-        hr {
-            clear: both; 
-        }
-
-      
-        .banner-left {
-        
+        .notice-y {
             width: 480px;
-            height: 368px;
-            float: left; 
+            margin: 0;
+            font-size: 24px;
+            font-weight: 500;
+            height: 70px;
+            line-height: 70px;
+            padding-left: 7px;
+
         }
 
         .date {
-            padding-left: 50px;
+            width: 30%;
+            margin: 0 auto;
+            padding-left: 360px;
         }
 
-      
 
-        .picture-01 {
+        .picture-s {
+            width: 473px;
+            height: 368px;
+            float: left;
+            margin-top: -76px;
+            background-color: #28A4D6;
+        }
+
+
+        .picture-01,
+        .picture-02 {
             width: 195px;
             height: 300px;
-            
+            margin-top: 34px;
+            margin-bottom: 34px;
         }
 
-       
+        .picture-01 {
+            margin-right: 18px;
+            margin-left: 34px;
+        }
+
 
         .picture-m {
             width: 480px;
-          
+            height: 368px;
+            margin-top: -76px;
             float: right;
-           
+            background-image: url(./night.png);
         }
 
+        button {
+            width: 280px;
+            height: 45px;
+            margin: 180px 100px; 
+            font-size: 20px;
+        }
+        /* 메인끝 */
+
+        /* 푸터시작 */
         footer {
             width: 1440px;
             height: 135px;
             margin: 0 auto;
             background-color: #0F3571;
+        } 
+
+        .logo2 {
+            float: left;
+            padding-top: 30px;
+            padding-left: 30px;
         }
 
-        .sns {
+        .info {
+            color: #75D2FE;
+            height: 50px;
+            float: left;
+            padding-top: 42px;
+            padding-left: 50px;
+            font-size: 17px;
+        } 
+
+       .sns {
             float: right;
+            padding-top: 60px;
+            padding-right: 30px;
         }
-
+       
+      
     </style>
 </head>
+
 <body>
     <div class="main-container"></div>
-        <header>
-            <div class="logo1">
-                <img src="./logo.png" width="160px">
-            </div>
-            <div class="menu">
-                <ul>
-                    <a href="#">
-                        <li>해외패키지</li>
-                    </a>
-                    <a href="#">
-                        <li>에어텔</li>
-                    </a>
-                    <a href="#">
-                        <li>허니문</li>
-                    </a>
-                    <a href="#">
-                        <li>골프</li>
-                    </a>
-                    <a href="#">
-                        <li>테마/크루즈</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="icon">
-                <a href="#"><img src="./icon-maypage.png"></a>
-                <a href="#"><img src="./icon-cal.png"></a>
-                <a href="#"><img src="./icon-share.png"></a>
-            </div>
-        </header>
-
-        <div class="sub-container">
-            <div class="center">
-                <h2>산토리니에서 즐거운 휴식을~</h2>
-                <h3>파랑풍선에서 초대합니다</h3>
-            </div>
+    <header>
+        <div class="logo1">
+            <img src="./logo.png" width="160px">
         </div>
-        
-        <div class="baby-container">
-            <div class="notice">
-                <h4>공 지 사 항</h4>
-            </div>
-            <hr>
+        <div class="menu">
+            <ul>
+                <a href="#">
+                    <li>해외패키지</li>
+                </a>
+                <a href="#">
+                    <li>에어텔</li>
+                </a>
+                <a href="#">
+                    <li>허니문</li>
+                </a>
+                <a href="#">
+                    <li>골프</li>
+                </a>
+                <a href="#">
+                    <li>테마/크루즈</li>
+                </a>
+            </ul>
+        </div>
+        <div class="icon">
+            <a href="#"><img src="./icon-maypage.png"></a>
+            <a href="#"><img src="./icon-cal.png"></a>
+            <a href="#"><img src="./icon-share.png"></a>
+        </div>
+    </header>
 
+    <div class="sub-container">
+        <div class="center">
+            <h2>산토리니에서 즐거운 휴식을~</h2>
+            <h3>파랑풍선에서 초대합니다</h3>
+        </div>
+    </div>
+
+    <div class="baby-container">
+        <div class="notice">
+            <h4>공 지 사 항</h4>
+            <hr>
             <div class="banner-left">
                 <div class="notice-y">
                     <div class="place">
@@ -223,7 +284,7 @@
                         <p>26/04/26</p>
                     </div>
                 </div>
-                
+
                 <hr>
 
                 <div class="notice-y">
@@ -250,42 +311,44 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="picture-s">
-                <div class="picture-01">
-                    <img src="./vill.png">
-                </div>
-                <div class="picture-02">
-                    <img src="./roof.png">
-                </div> 
+        <div class="picture-s">
+            <div class="picture-01">
+                <img src="./vill.png">
             </div>
-
-            <div class="picture-m">
-                <img src="./night.png">
+            <div class="picture-02">
+                <img src="./roof.png">
             </div>
         </div>
-        
-        <footer>
-            <div class="logo2">
-                <img src="./logo.png">
-            </div>
-            <div class="info">
-                <p>
-                    대표이사 김진국 서울특별시 중구 수표로31, 노랑풍선빌딩
-                </p>
-                <p>
-                    사업자등록번호 104-81-64440 관광사업자등록증번호 제2006-000003호통신판매업신고번호 제2008-서울중구-0278사업자 정보확인
-                </p>
-            </div>
-            <div class="sns">
-                <a href="https://www.facebook.com" target="_blank"><img src="./icon-fa.png"></a>
-                <a href="https://www.instargram.com" target="_blank"><img src="./icon-insta.png"></a>
-                <a href="https://www.youtube.com" target="_blank"><img src="./icon-youtube.png"></a>
-                <a href="https://www.kakaocorp.com" target="_blank"><img src="./icon-katalk.png"></a>
-                <a href="https://www.naver.blog.com" target="_blank"><img src="./icon-nblog.png"></a>
-            </div>
-        </footer>
+
+        <div class="picture-m">
+            <button>바 로 가 기</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo2">
+            <img src="./logo.png">
+        </div>
+        <div class="info">
+            <p>
+                대표이사 김진국 서울특별시 중구 수표로31, 노랑풍선빌딩
+            </p>
+            <p>
+                사업자등록번호 104-81-64440 관광사업자등록증번호 제2006-000003호통신판매업신고번호 제2008-서울중구-0278사업자 정보확인
+            </p>
+        </div>
+        <div class="sns">
+            <a href="https://www.facebook.com" target="_blank"><img src="./icon-fa.png"></a>
+            <a href="https://www.instargram.com" target="_blank"><img src="./icon-insta.png"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="./icon-youtube.png"></a>
+            <a href="https://www.kakaocorp.com" target="_blank"><img src="./icon-katalk.png"></a>
+            <a href="https://www.naver.blog.com" target="_blank"><img src="./icon-nblog.png"></a>
+        </div>
+    </footer>
 
     </div>
 </body>
+
 </html>
